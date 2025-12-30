@@ -5,13 +5,11 @@ A lightweight Pastebin-like application that allows users to create text pastes 
 ---
 
 ## Deployed URL
-https://your-app.vercel.app
-
+https://pastebin-project.vercel.app/
 ---
 
 ## Public Git Repository
-https://github.com/your-username/pastebin-lite
-
+https://github.com/MukeshSwain/pastebin-project/tree/main
 ---
 
 ## How to Run the App Locally
@@ -25,6 +23,11 @@ BASE_URL=http://localhost:4000
 TEST_MODE=0
 NODE_ENV=development
 ```
+in the controller file update the backend url :
+``` bash
+const url = http://localhost:4000
+```
+
 ```bash
 cd backend
 npm install
@@ -32,6 +35,11 @@ npm run dev
 ```
 
 ### Frontend
+in the api file update the backend url :
+``` bash
+const BASE_URL =  http://localhost:4000
+
+```
 ``` bash
 cd frontend
 npm install
