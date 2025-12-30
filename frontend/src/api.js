@@ -1,4 +1,4 @@
-const BASE_URL = "http://localhost:4000";
+const BASE_URL = "https://pastebin-project.onrender.com";
 
 export async function createPaste(payload) {
   const res = await fetch(`${BASE_URL}/api/pastes`, {
