@@ -5,7 +5,7 @@ export default function ViewPaste() {
   const { id } = useParams();
 
   useEffect(() => {
-    window.location.replace(`http://localhost:4000/p/${id}`);
+    window.location.replace(`https://pastebin-project.onrender.com/p/${id}`);
   }, [id]);
 
   return (
