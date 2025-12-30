@@ -1,6 +1,7 @@
 import { nanoid } from "nanoid";
 import { pool } from "../db.js";
 import { now } from "../utils/time.js";
+const url = `https://pastebin-project.onrender.com`;
 export async function createPaste(req, res) {
   const { content, ttl_seconds, max_views } = req.body;
 
@@ -29,7 +30,7 @@ export async function createPaste(req, res) {
 
   res.status(201).json({
     id,
-    url: `${process.env.BASE_URL}/p/${id}`,
+    url: `${url}/p/${id}`,
   });
 }
 
